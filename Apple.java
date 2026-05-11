@@ -12,15 +12,17 @@ public class Apple extends Actor
      * Act - do whatever the Apple wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
+    
     public Apple()
     {
         getImage().scale(50, 50);
     }
+    int speed = 1;
     
     public void act()
     {
         int x = getX();
-        int y = getY() + 2;
+        int y = getY() + speed;
         setLocation(x,y);
         
         MyWorld world = (MyWorld) getWorld();
@@ -31,4 +33,5 @@ public class Apple extends Actor
         }
         
     }
+    
 }
