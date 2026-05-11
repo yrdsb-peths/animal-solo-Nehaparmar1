@@ -35,7 +35,7 @@ public class Elephant extends Actor
     int imageIndex = 0;
     public void animateElephant()
     {
-        if(animationTimer.millisElapsed() < 200)
+        if(animationTimer.millisElapsed() < 100)
         {
             return;
         }
@@ -49,6 +49,8 @@ public class Elephant extends Actor
             setImage(idleLeft[imageIndex]);
             imageIndex = (imageIndex + 1) % idleLeft.length;
         }
+        
+        animationTimer.mark();
     }
     
     public void act()
