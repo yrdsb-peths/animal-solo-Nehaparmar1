@@ -33,6 +33,6 @@ public class MyWorld extends World {
         Apple apple = new Apple();
         int x = Greenfoot.getRandomNumber(600);
         int y = 0;
-        addObject(apple, x, y);      
+        addObject(apple, x, y); 
     }
 }
